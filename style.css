@@ -27,8 +27,16 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 3px 3px 5px rgb(109, 102, 86);
+    position: relative;
     border-radius: 5px;
 
+}
+#heading{
+    position:absolute;
+    top:0;
+    font-family: cursive;
+    color:#65430b;
+    text-shadow: 1px 3px 4px #727a07;
 }
 
 .outer-box {
@@ -102,4 +110,59 @@ img {
     font-size: 1.1rem;
     font-family: cursive;
 
+}
+@media (width<=725px) {
+    .container{
+        max-width:500px;
+    }
+    
+}
+@media (300px<=width<=515px) {
+    .container{
+        max-width:250px;
+    }
+    #quotes{
+        font-size: 0.8rem;
+    }
+    #author{
+        font-size: 0.5rem;
+    }
+}
+@media (200px<=width<=300px) {
+   
+    .container{
+        max-width:160px;
+    }
+    #quotes{
+        font-size: 0.8rem;
+
+    }
+    #author{
+        position: absolute;
+        bottom: 60px;
+        font-size: 0.5rem;
+    }
+    
+    .btn-2{
+        position: absolute;
+        bottom:-70px;
+    }
+    
+}
+@media (width<200px) {
+    .container{
+        max-width:150px;
+    }
+    #quotes{
+        font-size: 0.9rem;
+    }
+    #author{
+        font-size: 0.8rem;
+        position: absolute;
+        bottom:30px;
+    }
+    .btn-2{
+        position: absolute;
+        bottom:-70px;
+    }
 }
